@@ -13,8 +13,6 @@ def run_game():
 
     while True:
         gf.check_events()
-        game_display.fill(ai_settings.bg_color)
-        ship.blitme()
-        pygame.display.update()
+        gf.update_screen(ai_settings, game_display, ship)
 
 run_game()
